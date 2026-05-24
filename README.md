@@ -1,5 +1,7 @@
-# VVO-project-MGarcia - Final Degree Project Scripts
-Here I present the scripts developed throughout my Final Degree Project (TFG). 
+# VVO-project-MGarcia
+
+## Final Degree Project Scripts
+This repository contains the scripts developed throughout my Final Degree Project (TFG). 
 
 My project has focused on the optimization and robustness testing of **VHIO’s Visual Omics (VVO)**, an interactive application under development. Based on `R Shiny` and `iSEE`, VVO is designed for the visual exploration of bulk transcriptomic data obtained through the internal workflows of the **VHIO Bioinformatics Unit**.
 
