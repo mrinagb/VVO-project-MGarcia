@@ -4,7 +4,7 @@ library(readxl)
 library(S4Vectors)
 
 #Define the following variables using the names of the files and information needed:
-setwd("~/Desktop/TFG/VVO/DeeDee3")
+setwd(" ")
 file_sce    <- "sce_Intri_PROVA.rds"
 file_dea    <- "resultsAnnot241230.rds"
 extra_columns <- c()
@@ -44,7 +44,7 @@ for (con in contrastos) {
   
   leading_edge_list <- replicate(nrow(fea_full), character(0), simplify = FALSE)
   
-  #forcem el format 'fgsea'
+  #format 'fgsea'
   df_fea <- data.frame(
     pathway     = as.character(fea_full$ID),
     pval        = as.numeric(fea_full$pvalue),
@@ -79,7 +79,7 @@ for (con in contrastos) {
 
 dde <- DeeDeeExperiment(sce = sce)
 
-#recuperem cols perdudes 
+#lost cols 
 cols_interes <- c("Geneid", "Symbol", "Chr", "Start", "End", "Strand", "length", "Description", extra_columns)
 cols_existents <- unlist(lapply(cols_interes, function(x) {
   grep(paste0("^", x, "$"), colnames(res_dea_filtrat), ignore.case = TRUE)
