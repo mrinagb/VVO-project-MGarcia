@@ -3,7 +3,7 @@ library(readxl)
 library(DESeq2)
 
 #Define the following variables using the names of the files and information needed:
-dataDir <- setwd("~/Desktop/TFG/VVO/DeeDee4/CrearSCE")
+dataDir <- setwd("")
 # load(file.path(dataDir,"deseq2.dds.RData")) 
 # counts_matrix <- counts(dds)
 # counts_matrix <- readRDS("rawCounts_allbatches.rds")
